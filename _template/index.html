@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{SHOP_NAME}} | {{CATEGORY}} in Karimnagar</title>
+<meta name="description" content="{{SHOP_NAME}} - {{CATEGORY}} in {{AREA}}, Karimnagar. Call or WhatsApp {{PHONE}}.">
+<!--
+HOW TO USE: Find and replace these tokens (Ctrl+H in any editor):
+{{SHOP_NAME}} {{CATEGORY}} {{AREA}} {{ADDRESS}} {{PHONE}} {{WHATSAPP}} {{TAGLINE}} {{TAGLINE_TE}} {{HOURS}} {{MAPS_LINK}}
+WHATSAPP = number with country code, no + or spaces, e.g. 919876543210
+THEME: change data-theme on <body> to  shop  |  service  |  clinic
+PHOTOS: put images in an images/ folder, then replace each placeholder block with <img src="images/name.jpg" alt="...">
+-->
+<style>
+:root{--ink:#1c1c1c;--muted:#5d6470;--bg:#fff;--soft:#f5f6f8;--line:#dfe2e8;--brand:#c2410c;--brand-ink:#fff}
+[data-theme="service"]{--brand:#1d4ed8}
+[data-theme="clinic"]{--brand:#0f766e}
+@media (prefers-color-scheme:dark){:root{--ink:#eee;--muted:#a6adb8;--bg:#14161a;--soft:#1d2025;--line:#2d3138}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,"Noto Sans Telugu",Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header{background:var(--brand);color:var(--brand-ink);padding:36px 0 32px}
+h1{margin:0 0 6px;font-size:clamp(1.8rem,6vw,2.6rem);line-height:1.15}
+header p{margin:2px 0;opacity:.95}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none;background:#fff;color:#111}
+.btn.wa{background:#25d366;color:#07290f}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+section{padding:28px 0;border-bottom:1px solid var(--line)}
+h2{margin:0 0 12px;font-size:1.3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.item{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:14px}
+.item b{display:block}
+.item span{color:var(--muted)}
+.photo{background:var(--soft);border:1px dashed var(--line);border-radius:10px;aspect-ratio:4/3;display:grid;place-items:center;color:var(--muted);font-size:.9rem}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+footer{padding:22px 0 90px;color:var(--muted);font-size:.9rem}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--bg);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));gap:8px}
+.bar a{flex:1;text-align:center;padding:12px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--brand)}
+.bar a.wa{background:#25d366;color:#07290f}
+</style>
+</head>
+<body data-theme="shop">
+<header>
+<div class="wrap">
+<h1>{{SHOP_NAME}}</h1>
+<p>{{TAGLINE}}</p>
+<p>{{TAGLINE_TE}}</p>
+<div class="cta">
+<a class="btn" href="tel:+{{WHATSAPP}}">Call now</a>
+<a class="btn wa" href="https://wa.me/{{WHATSAPP}}?text=Hello%20{{SHOP_NAME}}">WhatsApp us</a>
+</div>
+</div>
+</header>
+
+<main class="wrap">
+<section>
+<h2>What we offer</h2>
+<div class="grid">
+<div class="item"><b>Product or service 1</b><span>Short description, price</span></div>
+<div class="item"><b>Product or service 2</b><span>Short description, price</span></div>
+<div class="item"><b>Product or service 3</b><span>Short description, price</span></div>
+<div class="item"><b>Product or service 4</b><span>Short description, price</span></div>
+</div>
+</section>
+
+<section>
+<h2>Photos</h2>
+<div class="grid">
+<div class="photo">Photo 1</div>
+<div class="photo">Photo 2</div>
+<div class="photo">Photo 3</div>
+</div>
+</section>
+
+<section>
+<h2>Visit us</h2>
+<p>{{ADDRESS}}<br>{{AREA}}, Karimnagar, Telangana</p>
+<p><b>Open:</b> {{HOURS}}</p>
+<p><a href="{{MAPS_LINK}}">Open in Google Maps</a></p>
+</section>
+</main>
+
+<footer class="wrap">© {{SHOP_NAME}}</footer>
+
+<nav class="bar" aria-label="Contact">
+<a href="tel:+{{WHATSAPP}}">Call</a>
+<a class="wa" href="https://wa.me/{{WHATSAPP}}">WhatsApp</a>
+</nav>
+</body>
+</html>

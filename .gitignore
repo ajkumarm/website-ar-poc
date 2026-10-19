@@ -1,0 +1,49 @@
+# Covers JetBrains IDEs: IntelliJ, PyCharm, WebStorm, AppCode, Rider, clion, rubymine
+
+## User-specific
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+## Generated files
+.idea/**/contentModel.xml
+
+## Sensitive info / local configurations
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataTabPolicies.xml
+.idea/mysql.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/dbnavigator.xml
+
+## Gradle / Maven / CMake components
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/compiler.xml
+.idea/**/modules.xml
+.idea/**/jarRepositories.xml
+
+## Third-party plugin data
+.idea/**/mongoSettings.xml
+.idea/**/copilot/
+.idea/**/sonarlint/
+.idea/vcs.xml
+
+## Project formats and outputs
+*.iws
+out/
+artifacts/
+
+## OS-specific files
+.DS_Store
+Thumbs.db
+
+.idea/
+
+# If you prefer to completely ignore the entire .idea folder
+# (useful if you are working in a multi-IDE team where others use VS Code, Eclipse, etc.)
+# Uncomment the line below:
+# .idea/
